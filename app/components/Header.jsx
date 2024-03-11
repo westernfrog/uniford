@@ -42,7 +42,7 @@ export default function Header() {
               />
             </Link>
           </div>
-          <div className="flex lg:hidden">
+          <div className="flex md:hidden xl:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -52,12 +52,12 @@ export default function Header() {
               <HamburgerMenuIcon className="w-8 h-8 stroke-[#5F8638]" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-10 flex flex-row items-center">
+          <div className="hidden md:flex xl:flex lg:gap-x-10 gap-x-7 flex-row items-center">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`flex flex-col items-center text-sm leading-6 ${
+                className={`flex flex-col items-center lg:text-sm text-xs leading-6 ${
                   item.href === router ? "font-semibold" : ""
                 } hover:font-semibold ease-in-out transition-all duration-300`}
               >
@@ -74,7 +74,7 @@ export default function Header() {
             <Link
               target="_blank"
               href="/"
-              className="font-semibold bg-[#B9E390] hover:bg-emerald-200 transition-colors duration-200 shadow py-2 px-10 rounded-xl"
+              className="font-semibold bg-[#B9E390] hover:bg-emerald-200 transition-colors duration-200 shadow lg:py-2 py-3 px-10 rounded-xl lg:text-base text-sm"
             >
               Donate
             </Link>
