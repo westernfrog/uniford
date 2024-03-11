@@ -65,6 +65,9 @@ export default function OrganInfo(params) {
                 />
               </div>
               <p className="text-xs py-2">your receipt will be emailed here.</p>
+              <h1 className="text-sm">
+                By donating you agree our terms and conditions.
+              </h1>
             </div>
           </div>
           <div class="lg:col-span-6 col-span-12 lg:block hidden"></div>
