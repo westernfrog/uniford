@@ -39,9 +39,9 @@ export default function Footer(params) {
             <h1 className="font-semibold text-lg">In India, For the world!</h1>
           </div>
           <div className="space-y-4 tracking-tight">
-            <button className="font-semibold flex items-center gap-1">
+            <Link href="/" className="font-semibold flex items-center gap-1">
               Back to Top <TriangleUpIcon className="w-6 h-6" />
-            </button>
+            </Link>
             <h1>Doner Support</h1>
             <Link href="mailto:donate@uniford.org">donate@uniford.org</Link>
           </div>
