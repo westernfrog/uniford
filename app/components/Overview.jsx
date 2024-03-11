@@ -10,7 +10,7 @@ import IndivInfo from "./IndivInfo";
 export default function Overview(params) {
   return (
     <>
-      <main className="xl:basis-11/12 p-6 bg-white rounded-xl shadow-sm">
+      <main className="xl:basis-11/12 p-6 bg-white rounded-xl shadow-sm overflow-x-hidden">
         <div className="space-y-4">
           <h1 className="text-3xl tracking-tight font-semibold">
             Help us to do more
@@ -99,7 +99,7 @@ w-[50%] rounded-sm py-3 font-semibold
                 <button className="flex-shrink-0 ring-1 ring-black px-7 py-2 rounded-lg text-sm">
                   ₹ 9000
                 </button>
-                <div className="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-900 focus-within:ring-2  focus-within:ring-[#B9E390] w-full">
+                <div className="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-900 focus-within:ring-2  focus-within:ring-[#B9E390] overflow-hidden">
                   <span className="flex select-none items-center sm:text-sm">
                     <select className="bg-transparent focus:ring-[#B9E390] rounded-l-lg text-sm">
                       <option>Rs.</option>
