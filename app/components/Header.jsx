@@ -4,7 +4,11 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { EyeClosedIcon, GlobeIcon } from "@radix-ui/react-icons";
+import {
+  EyeClosedIcon,
+  GlobeIcon,
+  HamburgerMenuIcon,
+} from "@radix-ui/react-icons";
 import Image from "next/image";
 import logo from "../../public/logo.png";
 
@@ -32,7 +36,7 @@ export default function Header() {
                 width={50}
                 height={50}
                 alt="Uniford Logo"
-                className="w-12 h-12"
+                className="w-14 h-14"
               />
             </Link>
           </div>
@@ -43,6 +47,7 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
+              <HamburgerMenuIcon className="w-8 h-8 stroke-[#5F8638]" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-10 flex flex-row items-center">
@@ -74,7 +79,7 @@ export default function Header() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full backdrop-blur-xl backdrop-brightness-50 overflow-y-auto p-5 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full bg-white overflow-y-auto p-5 sm:max-w-sm">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
                 <span className="sr-only">Uniford</span>
@@ -95,19 +100,18 @@ export default function Header() {
                       onClick={() => setMobileMenuOpen(false)}
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base leading-7 text-gray-100"
+                      className="rounded-lg px-3 py-2 text-base leading-7 flex items-center gap-3"
                     >
+                      <item.icon />
                       {item.name}
                     </Link>
                   ))}
                   <Link
                     target="_blank"
-                    href={"https://pmo-hiring.vercel.app/"}
-                    className="-mx-3 block rounded-lg px-3 text-base leading-7 text-gray-100 flex"
+                    href="/"
+                    className="font-semibold bg-[#B9E390] hover:bg-emerald-200 transition-colors duration-200 shadow py-2 px-10 rounded-xl"
                   >
-                    <span className="border-b flex items-center gap-3">
-                      Join Us
-                    </span>
+                    Donate
                   </Link>
                 </div>
               </div>
