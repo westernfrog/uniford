@@ -1,7 +1,7 @@
 export default function Info(params) {
   return (
     <>
-      <section className="flex flex-col gap-4 ">
+      <section className="flex flex-col gap-4 pb-6">
         <h1 className="text-3xl font-semibold tracking-tight">
           Your Information
         </h1>

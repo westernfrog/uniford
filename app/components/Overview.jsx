@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Info from "./Info";
+import MonthlyDonation from "./MonthlyDonation";
 
 export default function Overview(params) {
   return (
@@ -33,6 +34,7 @@ export default function Overview(params) {
           </div>
           <hr className="py-2" />
           <Info />
+          <MonthlyDonation />
         </div>
       </main>
     </>
