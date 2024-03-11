@@ -4,22 +4,23 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  Cross1Icon,
-  EyeClosedIcon,
-  GlobeIcon,
-  HamburgerMenuIcon,
-} from "@radix-ui/react-icons";
+import { Cross1Icon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import logo from "../../public/logo.png";
+import i1 from "../../public/Vector (1).svg";
+import i2 from "../../public/Vector (2).svg";
+import i3 from "../../public/Vector (3).svg";
+import i4 from "../../public/Vector (4).svg";
+import i5 from "../../public/Vector (5).svg";
+import i6 from "../../public/Vector (6).svg";
 
 const navigation = [
-  { name: "Review", href: "/", icon: GlobeIcon },
-  { name: "Tools", href: "/", icon: GlobeIcon },
-  { name: "University", href: "/", icon: GlobeIcon },
-  { name: "Resource", href: "/", icon: GlobeIcon },
-  { name: "Scholarship", href: "/", icon: GlobeIcon },
-  { name: "Rewards", href: "/", icon: GlobeIcon },
+  { name: "Review", href: "/", icon: i1 },
+  { name: "Tools", href: "/", icon: i2 },
+  { name: "University", href: "/", icon: i3 },
+  { name: "Resource", href: "/", icon: i4 },
+  { name: "Scholarship", href: "/", icon: i5 },
+  { name: "Rewards", href: "/", icon: i6 },
 ];
 
 export default function Header() {
@@ -37,7 +38,7 @@ export default function Header() {
                 width={50}
                 height={50}
                 alt="Uniford Logo"
-                className="w-14 h-14"
+                className="w-12 h-12"
               />
             </Link>
           </div>
@@ -57,10 +58,16 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`flex flex-col items-center text-sm leading-6 ${
-                  item.href == router ? "font-semibold" : ""
-                }   hover:font-semibold ease-in-out transition-all duration-300`}
+                  item.href === router ? "font-semibold" : ""
+                } hover:font-semibold ease-in-out transition-all duration-300`}
               >
-                <item.icon className="w-5 h-5" />
+                <Image
+                  src={item.icon}
+                  width={50}
+                  height={50}
+                  alt={item.name}
+                  className="w-5 h-5"
+                />
                 {item.name}
               </Link>
             ))}
@@ -109,7 +116,13 @@ export default function Header() {
                   href={item.href}
                   className="rounded-lg px-3 py-2 font-semibold flex items-center gap-3 text-xl"
                 >
-                  <item.icon className="w-6 h-6" />
+                  <Image
+                    src={item.icon}
+                    width={50}
+                    height={50}
+                    alt={item.name}
+                    className="w-5 h-5"
+                  />
                   {item.name}
                 </Link>
               ))}

@@ -90,7 +90,7 @@ w-[50%] rounded-sm py-3 font-semibold
             </div>
             <div className="">
               <h1>Choose a monthly amount</h1>
-              <div className="flex items-center gap-3 my-3">
+              <div className="flex flex-wrap items-center gap-3 my-3">
                 <button className="flex-shrink-0 bg-[#B9E390] px-7 py-2 rounded-lg text-sm shadow-lg">
                   ₹ 3000
                 </button>
