@@ -101,7 +101,7 @@ w-[50%] rounded-sm py-3 font-semibold
                 </button>
                 <div className="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-900 focus-within:ring-2  focus-within:ring-[#B9E390] w-full">
                   <span className="flex select-none items-center sm:text-sm">
-                    <select className="bg-transparent focus:bg-[#B9E39060] rounded-l-lg text-sm">
+                    <select className="bg-transparent focus:ring-[#B9E390] rounded-l-lg text-sm">
                       <option>Rs.</option>
                       <option>USD</option>
                       <option>EUR</option>
@@ -109,7 +109,7 @@ w-[50%] rounded-sm py-3 font-semibold
                   </span>
                   <input
                     type="number"
-                    className="rounded-r-lg bg-transparent py-1 pl-1 placeholder:text-gray-800 text-sm w-full"
+                    className="rounded-r-lg bg-transparent py-1 pl-1 placeholder:text-gray-800 text-sm w-full focus:ring-[#B9E390]"
                     placeholder="Others"
                   />
                 </div>
