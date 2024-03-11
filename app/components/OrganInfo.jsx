@@ -6,61 +6,61 @@ export default function OrganInfo(params) {
           Your Information
         </h1>
         <div className="grid grid-cols-12 gap-4">
-          <div class="lg:col-span-6 col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <label
-              for="username"
-              class="xl:block hidden text-sm font-medium leading-6"
+              htmlFor="username"
+              className="xl:block hidden text-sm font-medium leading-6"
             >
               Organisation Name
             </label>
-            <div class="mt-2">
-              <div class="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
+            <div className="mt-2">
+              <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  autocomplete="name"
-                  class="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  autoComplete="name"
+                  className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder=" Organisation Name"
                 />
               </div>
             </div>
           </div>
-          <div class="lg:col-span-6 col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <label
-              for="username"
-              class="xl:block hidden text-sm font-medium leading-6"
+              htmlFor="username"
+              className="xl:block hidden text-sm font-medium leading-6"
             >
               Owner Name
             </label>
-            <div class="mt-2">
-              <div class="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
+            <div className="mt-2">
+              <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  autocomplete="name"
-                  class="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  autoComplete="name"
+                  className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="Owner Name"
                 />
               </div>
             </div>
           </div>
-          <div class="lg:col-span-6 col-span-12">
+          <div className="lg:col-span-6 col-span-12">
             <label
-              for="username"
-              class="xl:block hidden text-sm font-medium leading-6"
+              htmlFor="username"
+              className="xl:block hidden text-sm font-medium leading-6"
             >
               Organisation Mail ID
             </label>
-            <div class="mt-2">
-              <div class="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
+            <div className="mt-2">
+              <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="mail"
                   name="name"
                   id="name"
-                  autocomplete="mail"
-                  class="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  autoComplete="mail"
+                  className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="Organisation Mail ID"
                 />
               </div>
@@ -70,22 +70,22 @@ export default function OrganInfo(params) {
               </h1>
             </div>
           </div>
-          <div class="lg:col-span-6 col-span-12 lg:block hidden"></div>
-          <div class="lg:col-span-6 col-span-12">
+          <div className="lg:col-span-6 col-span-12 lg:block hidden"></div>
+          <div className="lg:col-span-6 col-span-12">
             <label
-              for="username"
-              class="xl:block hidden text-sm font-medium leading-6"
+              htmlFor="username"
+              className="xl:block hidden text-sm font-medium leading-6"
             >
               Phone Number
             </label>
-            <div class="mt-2">
-              <div class="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
+            <div className="mt-2">
+              <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="tel"
                   name="name"
                   id="name"
-                  autocomplete="tel"
-                  class="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                  autoComplete="tel"
+                  className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="Phone Number"
                 />
               </div>

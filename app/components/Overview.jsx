@@ -126,7 +126,7 @@ w-[50%] rounded-sm py-3 font-semibold
                 id="comments"
                 name="comments"
                 type="checkbox"
-                class="h-4 w-4 rounded border-black text-[#B9E390] focus:ring-[#B9E390]"
+                className="h-4 w-4 rounded border-black text-[#B9E390] focus:ring-[#B9E390]"
               />
               <h1 className="text-sm">
                 Dedicate my donation in honor or in memory of someone
