@@ -6,6 +6,7 @@ import MonthlyDonation from "./MonthlyDonation";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import IndivInfo from "./IndivInfo";
+import { InfoCircledIcon, TriangleDownIcon } from "@radix-ui/react-icons";
 
 export default function Overview(params) {
   return (
@@ -87,15 +88,44 @@ w-[50%] rounded-sm py-3 font-semibold
                 </select>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="flex items-center bg-[#B9E390]">
-                <label>HHH</label>
-                <input
-                  id="push-nothing"
-                  name="push-notifications"
-                  type="radio"
-                />
+            <div className="">
+              <h1>Choose a monthly amount</h1>
+              <div className="flex items-center gap-3 my-3">
+                <button className="bg-[#B9E390] px-7 py-2 rounded-lg shadow-lg">
+                  ₹ 3000
+                </button>
+                <button className="ring-1 ring-black px-7 py-2 rounded-lg">
+                  ₹ 5000
+                </button>
+                <button className="ring-1 ring-black px-7 py-2 rounded-lg">
+                  ₹ 9000
+                </button>
+                <div className="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-900 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390] sm:max-w-md">
+                  <span className="flex select-none items-center pl-3 sm:text-sm">
+                    Rs.
+                    <TriangleDownIcon className="w-5 h-5" />
+                  </span>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    autoComplete="username"
+                    className="block flex-1 rounded-r-lg bg-transparent py-2 pl-1 text-gray-900 placeholder:text-gray-800 focus:ring-0 sm:text-sm sm:leading-6"
+                    placeholder="Others"
+                  />
+                </div>
               </div>
+            </div>
+            <div className="flex items-center gap-2 mt-2">
+              <input
+                id="comments"
+                name="comments"
+                type="checkbox"
+                class="h-4 w-4 rounded border-black text-[#B9E390] focus:ring-[#B9E390]"
+              />
+              <h1 className="text-sm">
+                Dedicate my donation in honor or in memory of someone
+              </h1>
             </div>
             <hr className="py-2" />
             <Tab.Panels>
