@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Info from "./Info";
+import OrganInfo from "./OrganInfo";
 import MonthlyDonation from "./MonthlyDonation";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
+import IndivInfo from "./IndivInfo";
 
 export default function Overview(params) {
   return (
@@ -69,7 +70,6 @@ w-[50%] rounded-sm py-3 font-semibold
                 )}
               </Tab>
             </Tab.List>
-
             <div className="py-4">
               <label htmlFor="country" className="block font-medium leading-6">
                 How often would you like to donate?
@@ -100,9 +100,11 @@ w-[50%] rounded-sm py-3 font-semibold
             <hr className="py-2" />
             <Tab.Panels>
               <Tab.Panel>
-                <Info />
+                <OrganInfo />
               </Tab.Panel>
-              <Tab.Panel>Content 2</Tab.Panel>
+              <Tab.Panel>
+                <IndivInfo />
+              </Tab.Panel>
             </Tab.Panels>
           </Tab.Group>
           <MonthlyDonation />
