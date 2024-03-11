@@ -12,7 +12,7 @@ export default function MonthlyDonation(params) {
               id="comments"
               name="comments"
               type="checkbox"
-              class="h-5 w-5 rounded border-black text-[#B9E390] focus:ring-[#B9E390]"
+              class="h-4 w-4 rounded border-black text-[#B9E390] focus:ring-[#B9E390]"
             />
             <p className="text-sm">
               Yes, I&apos;ll cover the transaction fees on Uniford can keep 100%

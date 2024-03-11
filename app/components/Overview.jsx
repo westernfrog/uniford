@@ -13,7 +13,7 @@ export default function Overview(params) {
     <>
       <main className="lg:basis-2/3 p-6 bg-white rounded-xl shadow-sm">
         <div className="space-y-4">
-          <h1 className="lg:text-3xl text-2xl tracking-tight font-semibold">
+          <h1 className="text-3xl tracking-tight font-semibold">
             Help us to do more
           </h1>
           <p>
@@ -90,7 +90,7 @@ w-[50%] rounded-sm py-3 font-semibold
             </div>
             <div className="">
               <h1>Choose a monthly amount</h1>
-              <div className="flex items-center gap-3 my-3">
+              <div className="flex flex-wrap items-center gap-3 my-3">
                 <button className="bg-[#B9E390] px-7 py-2 rounded-lg shadow-lg">
                   ₹ 3000
                 </button>

@@ -89,7 +89,7 @@ export default function Header() {
                   width={50}
                   height={50}
                   alt="Uniford Logo"
-                  className="w-8 h-8"
+                  className="w-14 h-14"
                 />
               </Link>
               <button
@@ -98,32 +98,28 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <Cross1Icon />
+                <Cross1Icon className="w-6 h-6" />
               </button>
             </div>
-            <div className="flow-root mt-6">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <Link
-                      onClick={() => setMobileMenuOpen(false)}
-                      key={item.name}
-                      href={item.href}
-                      className="rounded-lg px-3 py-2 font-semibold flex items-center gap-3"
-                    >
-                      <item.icon />
-                      {item.name}
-                    </Link>
-                  ))}
-                  <Link
-                    target="_blank"
-                    href="/"
-                    className="rounded-lg px-3 py-2 font-semibold flex items-center gap-3"
-                  >
-                    Donate
-                  </Link>
-                </div>
-              </div>
+            <div className="space-y-4 mt-6">
+              {navigation.map((item) => (
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  key={item.name}
+                  href={item.href}
+                  className="rounded-lg px-3 py-2 font-semibold flex items-center gap-3 text-xl"
+                >
+                  <item.icon className="w-6 h-6" />
+                  {item.name}
+                </Link>
+              ))}
+              <Link
+                target="_blank"
+                href="/"
+                className="rounded-lg px-3 py-3 font-semibold flex items-center justify-center gap-3 text-xl bg-[#B9E390]"
+              >
+                Donate
+              </Link>
             </div>
           </Dialog.Panel>
         </Dialog>
