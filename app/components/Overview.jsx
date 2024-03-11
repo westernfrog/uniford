@@ -5,9 +5,9 @@ import MonthlyDonation from "./MonthlyDonation";
 export default function Overview(params) {
   return (
     <>
-      <main className="basis-2/3 flex items-center justify-center gap-4 p-6 bg-white rounded-xl shadow-sm">
+      <main className="lg:basis-2/3 p-6 bg-white rounded-xl shadow-sm">
         <div className="space-y-4">
-          <h1 className="text-3xl tracking-tight font-semibold">
+          <h1 className="lg:text-3xl text-2xl tracking-tight font-semibold">
             Help us to do more
           </h1>
           <p>
