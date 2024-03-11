@@ -6,12 +6,11 @@ import MonthlyDonation from "./MonthlyDonation";
 import { Tab } from "@headlessui/react";
 import { Fragment } from "react";
 import IndivInfo from "./IndivInfo";
-import { InfoCircledIcon, TriangleDownIcon } from "@radix-ui/react-icons";
 
 export default function Overview(params) {
   return (
     <>
-      <main className="lg:basis-2/3 p-6 bg-white rounded-xl shadow-sm">
+      <main className="xl:basis-11/12 p-6 bg-white rounded-xl shadow-sm">
         <div className="space-y-4">
           <h1 className="text-3xl tracking-tight font-semibold">
             Help us to do more

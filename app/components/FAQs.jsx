@@ -19,7 +19,7 @@ const faqs = [
 export default function FAQs(params) {
   return (
     <>
-      <section className="lg:basis-1/3 p-6 bg-white rounded-xl shadow-sm">
+      <section className="xl:basis-1/12 p-6 bg-white rounded-xl shadow-sm">
         <div className="space-y-4">
           <h1 className="text-3xl font-semibold">FAQ&apos;s</h1>
           <ul className="space-y-4 list-disc px-4">
