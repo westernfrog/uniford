@@ -90,27 +90,32 @@ w-[50%] rounded-sm py-3 font-semibold
             </div>
             <div className="">
               <h1>Choose a monthly amount</h1>
-              <div className="flex flex-wrap items-center gap-3 my-3">
-                <button className="bg-[#B9E390] px-7 py-2 rounded-lg shadow-lg">
+              <div className="flex items-center gap-3 my-3">
+                <button className="flex-shrink-0 bg-[#B9E390] px-7 py-2 rounded-lg text-sm shadow-lg">
                   ₹ 3000
                 </button>
-                <button className="ring-1 ring-black px-7 py-2 rounded-lg">
+                <button className="flex-shrink-0 ring-1 ring-black px-7 py-2 rounded-lg text-sm">
                   ₹ 5000
                 </button>
-                <button className="ring-1 ring-black px-7 py-2 rounded-lg">
+                <button className="flex-shrink-0 ring-1 ring-black px-7 py-2 rounded-lg text-sm">
                   ₹ 9000
                 </button>
-                <div className="flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-900 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390] sm:max-w-md">
-                  <span className="flex select-none items-center pl-3 sm:text-sm">
-                    Rs.
-                    <TriangleDownIcon className="w-5 h-5" />
+                <div className="flex-shrink-0 flex rounded-lg shadow-sm ring-1 ring-inset ring-gray-900 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
+                  <span className="flex select-none items-center sm:text-sm">
+                    <select
+                      id="country"
+                      name="country"
+                      autoComplete="country-name"
+                      className="bg-transparent focus:bg-[#B9E39060] rounded-l-lg text-sm"
+                    >
+                      <option>Rs.</option>
+                      <option>USD</option>
+                      <option>EUR</option>
+                    </select>
                   </span>
                   <input
-                    type="text"
-                    name="username"
-                    id="username"
-                    autoComplete="username"
-                    className="block flex-1 rounded-r-lg bg-transparent py-2 pl-1 text-gray-900 placeholder:text-gray-800 focus:ring-0 sm:text-sm sm:leading-6"
+                    type="number"
+                    className="rounded-r-lg bg-transparent py-1 pl-1 placeholder:text-gray-800 focus:ring-0 text-sm"
                     placeholder="Others"
                   />
                 </div>
