@@ -17,8 +17,6 @@ export default function OrganInfo(params) {
               <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="text"
-                  name="name"
-                  id="name"
                   autoComplete="name"
                   className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder=" Organisation Name"
@@ -37,8 +35,6 @@ export default function OrganInfo(params) {
               <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="text"
-                  name="name"
-                  id="name"
                   autoComplete="name"
                   className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="Owner Name"
@@ -56,12 +52,10 @@ export default function OrganInfo(params) {
             <div className="mt-2">
               <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
-                  type="mail"
-                  name="name"
-                  id="name"
-                  autoComplete="mail"
+                  type="email"
+                  autoComplete="tel"
                   className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
-                  placeholder="Organisation Mail ID"
+                  placeholder="Organisation Main ID"
                 />
               </div>
               <p className="text-xs py-2">your receipt will be emailed here.</p>
@@ -82,8 +76,6 @@ export default function OrganInfo(params) {
               <div className="flex lg:rounded-md rounded-full shadow-sm ring-1 ring-inset ring-gray-800 focus-within:ring-2 focus-within:ring-inset focus-within:ring-[#B9E390]">
                 <input
                   type="tel"
-                  name="name"
-                  id="name"
                   autoComplete="tel"
                   className="block flex-1 border-0 bg-transparent py-2.5 pl-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                   placeholder="Phone Number"
