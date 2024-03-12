@@ -1,7 +1,7 @@
 export default function MonthlyDonation(params) {
   return (
     <>
-      <section className="grid grid-cols-12 gap-6 py-6 border-t">
+      <section className="lg:grid grid-cols-12 gap-6 py-6 border-t">
         <div className="xl:col-span-6 md:col-span-6 col-span-12 text-2xl space-y-4">
           <h1>Monthly donation</h1>
           <h1>
