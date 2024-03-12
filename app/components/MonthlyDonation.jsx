@@ -1,7 +1,7 @@
 export default function MonthlyDonation(params) {
   return (
     <>
-      <section className="lg:grid grid-cols-12 gap-6 py-6 border-t">
+      <section className="lg:grid grid-cols-12 gap-6 py-6 border-t overflow-x-hidden">
         <div className="xl:col-span-6 md:col-span-6 col-span-12 text-2xl space-y-4">
           <h1>Monthly donation</h1>
           <h1>
@@ -20,7 +20,7 @@ export default function MonthlyDonation(params) {
             </p>
           </div>
         </div>
-        <div className="xl:col-span-6 md:col-span-6 col-span-12 flex flex-col flex-wrap font-semibold gap-4 lg:mt-0 mt-6">
+        <div className="xl:col-span-6 md:col-span-6 col-span-12 flex flex-col flex-wrap font-semibold gap-4 lg:mt-0 mt-6 px-2">
           <h1>Donate to your preferred payment</h1>
           <button className="hover:bg-[#B9E390] hover:text-white ring-1 ring-black hover:ring-0 py-3 rounded-xl hover:shadow-lg hover:shadow-gray-400 transition duration-200 ease-in-out">
             UPI
